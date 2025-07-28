@@ -5,12 +5,7 @@ import { Badge } from '@/components/ui/badge.jsx'
 import { motion } from 'framer-motion'
 import './App.css'
 
-// Import assets
-import jupurrHero from './assets/415e4207-d4a5-456c-8f47-371562fbc863.jpeg'
-import microwaveExplosion from './assets/6fb2148a-3fdf-4681-b3b2-c43876a573ae.jpeg'
-import jupurrWormhole from './assets/f6c696e4-def0-4a99-8c33-f92cecb7f54b.jpeg'
-import microwaveBurrito from './assets/05f44c71-2a82-41ee-9e80-96c1bb2ea5bf.jpeg'
-import jupurrCloseup from './assets/5bb6f65e-5846-401d-a5c3-b913cc5344ae.jpeg'
+// Import assets - keeping only the video
 import jupurrVideo from './assets/ecc16e34-fea7-4e1d-80d3-7c76e54fb36a.mp4'
 
 function App() {
@@ -47,7 +42,7 @@ function App() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50 z-10"></div>
         <div className="absolute inset-0 overflow-hidden">
           <motion.img 
-            src={jupurrHero} 
+            src="/WhatsApp Image 2025-07-27 at 8.20.01 PM.jpeg" 
             alt="Jupurr Hero" 
             className="w-full h-full object-cover opacity-30"
             initial={{ scale: 1.2 }}
@@ -135,7 +130,7 @@ function App() {
             
             <motion.div variants={fadeInUp}>
               <img 
-                src={microwaveBurrito} 
+                src="/WhatsApp Image 2025-07-27 at 8.20.14 PM.jpeg" 
                 alt="Microwave with burrito" 
                 className="rounded-lg shadow-2xl w-full hover:scale-105 transition-transform duration-300"
               />
@@ -145,7 +140,7 @@ function App() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <motion.div variants={fadeInUp} className="order-2 md:order-1">
               <img 
-                src={microwaveExplosion} 
+                src="/WhatsApp Image 2025-07-27 at 8.20.16 PM.jpeg" 
                 alt="Microwave explosion" 
                 className="rounded-lg shadow-2xl w-full hover:scale-105 transition-transform duration-300"
               />
@@ -170,7 +165,7 @@ function App() {
 
           <motion.div variants={fadeInUp} className="text-center">
             <img 
-              src={jupurrWormhole} 
+              src="/WhatsApp Image 2025-07-27 at 8.20.18 PM.jpeg" 
               alt="Jupurr emerging from wormhole" 
               className="rounded-lg shadow-2xl w-full max-w-3xl mx-auto hover:scale-105 transition-transform duration-300 mb-12"
             />
@@ -187,10 +182,10 @@ function App() {
             Purr Videos
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <video src="/pur1.mp4" controls className="w-full rounded-lg shadow-lg" poster="/im2.jpeg">
+            <video src="/pur1.mp4" controls className="w-full rounded-lg shadow-lg" poster="/WhatsApp Image 2025-07-27 at 8.20.20 PM.jpeg">
               Sorry, your browser does not support embedded videos.
             </video>
-            <video src="/pur2.mp4" controls className="w-full rounded-lg shadow-lg" poster="/im3.jpeg">
+            <video src="/pur2.mp4" controls className="w-full rounded-lg shadow-lg" poster="/WhatsApp Image 2025-07-27 at 8.20.22 PM.jpeg">
               Sorry, your browser does not support embedded videos.
             </video>
           </div>
@@ -223,7 +218,7 @@ function App() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div variants={fadeInUp}>
               <img 
-                src={jupurrCloseup} 
+                src="/WhatsApp Image 2025-07-27 at 8.20.23 PM.jpeg" 
                 alt="Jupurr closeup" 
                 className="rounded-lg shadow-2xl w-full hover:scale-105 transition-transform duration-300"
               />
@@ -259,12 +254,12 @@ function App() {
             variants={fadeInUp}
           >
             <img
-              src="/im2.jpeg"
+              src="/WhatsApp Image 2025-07-27 at 8.20.23 PM (1).jpeg"
               alt="Jupurr Cat Hologram Surprised"
               className="w-full max-w-3xl object-contain rounded-2xl shadow-2xl bg-black/30"
             />
             <img
-              src="/im3.jpeg"
+              src="/WhatsApp Image 2025-07-27 at 8.20.23 PM (2).jpeg"
               alt="Jupurr Cat Hologram Happy"
               className="w-full max-w-3xl object-contain rounded-2xl shadow-2xl bg-black/30"
             />
@@ -340,6 +335,50 @@ function App() {
               </CardContent>
             </Card>
           </motion.div>
+        </div>
+      </motion.section>
+
+      {/* Additional Images Section */}
+      <motion.section 
+        className="py-20 px-4 bg-gradient-to-r from-purple-900/30 to-blue-900/30"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={staggerContainer}
+      >
+        <div className="max-w-6xl mx-auto">
+          <motion.h2 
+            className="text-4xl md:text-6xl font-bold text-center mb-16 bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent"
+            variants={fadeInUp}
+          >
+            🐱 MORE JUPURR MOMENTS 🐱
+          </motion.h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <motion.div variants={fadeInUp}>
+              <img 
+                src="/WhatsApp Image 2025-07-27 at 8.20.24 PM.jpeg" 
+                alt="Jupurr moment 1" 
+                className="rounded-lg shadow-2xl w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </motion.div>
+            
+            <motion.div variants={fadeInUp}>
+              <img 
+                src="/WhatsApp Image 2025-07-27 at 8.24.58 PM.jpeg" 
+                alt="Jupurr moment 2" 
+                className="rounded-lg shadow-2xl w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </motion.div>
+            
+            <motion.div variants={fadeInUp}>
+              <img 
+                src="/WhatsApp Image 2025-07-27 at 8.24.58 PM (1).jpeg" 
+                alt="Jupurr moment 3" 
+                className="rounded-lg shadow-2xl w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </motion.div>
+          </div>
         </div>
       </motion.section>
 
