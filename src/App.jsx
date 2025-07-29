@@ -163,13 +163,7 @@ function App() {
             </motion.div>
           </div>
 
-          <motion.div variants={fadeInUp} className="text-center">
-            <img 
-              src="/WhatsApp Image 2025-07-27 at 8.20.22 PM.jpeg" 
-              alt="Jupurr emerging from wormhole" 
-              className="rounded-lg shadow-2xl w-full max-w-3xl mx-auto hover:scale-105 transition-transform duration-300 mb-12"
-            />
-          </motion.div>
+          {/* Removed image: <img src="/WhatsApp Image 2025-07-27 at 8.20.22 PM.jpeg" ... /> */}
 
 
         </div>
@@ -185,7 +179,7 @@ function App() {
             <video src="/pur1.mp4" controls className="w-full rounded-lg shadow-lg" poster="/WhatsApp Image 2025-07-27 at 8.20.20 PM.jpeg">
               Sorry, your browser does not support embedded videos.
             </video>
-            <video src="/pur2.mp4" controls className="w-full rounded-lg shadow-lg" poster="/WhatsApp Image 2025-07-27 at 8.20.22 PM.jpeg">
+            <video src="/pur2.mp4" controls className="w-full rounded-lg shadow-lg" poster="/WhatsApp Image 2025-07-27 at 8.24.58 PM (1).jpeg">
               Sorry, your browser does not support embedded videos.
             </video>
           </div>
