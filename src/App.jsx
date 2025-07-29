@@ -42,7 +42,7 @@ function App() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50 z-10"></div>
         <div className="absolute inset-0 overflow-hidden">
           <motion.img 
-            src="/WhatsApp Image 2025-07-27 at 8.20.01 PM.jpeg" 
+            src="/im3.jpeg" 
             alt="Jupurr Hero" 
             className="w-full h-full object-cover opacity-30"
             initial={{ scale: 1.2 }}
@@ -165,7 +165,7 @@ function App() {
 
           <motion.div variants={fadeInUp} className="text-center">
             <img 
-              src="/WhatsApp Image 2025-07-27 at 8.20.18 PM.jpeg" 
+              src="/WhatsApp Image 2025-07-27 at 8.20.22 PM.jpeg" 
               alt="Jupurr emerging from wormhole" 
               className="rounded-lg shadow-2xl w-full max-w-3xl mx-auto hover:scale-105 transition-transform duration-300 mb-12"
             />
@@ -357,7 +357,7 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <motion.div variants={fadeInUp}>
               <img 
-                src="/WhatsApp Image 2025-07-27 at 8.20.24 PM.jpeg" 
+                src="/im3.jpeg" 
                 alt="Jupurr moment 1" 
                 className="rounded-lg shadow-2xl w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
               />
