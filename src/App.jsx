@@ -130,8 +130,8 @@ function App() {
             
             <motion.div variants={fadeInUp}>
               <img 
-                src="/WhatsApp Image 2025-07-27 at 8.20.14 PM.jpeg" 
-                alt="Microwave with burrito" 
+                src="/WhatsApp Image 2025-07-27 at 8.20.16 PM.jpeg" 
+                alt="Microwave explosion" 
                 className="rounded-lg shadow-2xl w-full hover:scale-105 transition-transform duration-300"
               />
             </motion.div>
@@ -367,14 +367,6 @@ function App() {
               <img 
                 src="/WhatsApp Image 2025-07-27 at 8.24.58 PM.jpeg" 
                 alt="Jupurr moment 2" 
-                className="rounded-lg shadow-2xl w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </motion.div>
-            
-            <motion.div variants={fadeInUp}>
-              <img 
-                src="/WhatsApp Image 2025-07-27 at 8.24.58 PM (1).jpeg" 
-                alt="Jupurr moment 3" 
                 className="rounded-lg shadow-2xl w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
               />
             </motion.div>
