@@ -41,9 +41,11 @@ function App() {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50 z-10"></div>
         <div className="absolute inset-0 overflow-hidden">
-          <motion.img 
-            src="/im3.jpeg" 
-            alt="Jupurr Hero" 
+          <motion.video 
+            src="/homepage video.mp4" 
+            autoPlay 
+            loop 
+            muted 
             className="w-full h-full object-cover opacity-30"
             initial={{ scale: 1.2 }}
             animate={{ scale: 1 }}
