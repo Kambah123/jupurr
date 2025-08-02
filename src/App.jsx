@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
 import { motion } from 'framer-motion'
+import { useIsMobile } from './hooks/use-mobile.js'
 import './App.css'
 
 // Import assets - keeping only the video
@@ -10,6 +11,9 @@ import jupurrVideo from './assets/ecc16e34-fea7-4e1d-80d3-7c76e54fb36a.mp4'
 
 function App() {
   const [isVisible, setIsVisible] = useState(false)
+  const [videoLoaded, setVideoLoaded] = useState(false)
+  const [videoError, setVideoError] = useState(false)
+  const isMobile = useIsMobile()
 
   useEffect(() => {
     setIsVisible(true)
@@ -41,16 +45,42 @@ function App() {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50 z-10"></div>
         <div className="absolute inset-0 overflow-hidden">
-          <motion.video 
-            src="/homepage video.mp4" 
-            autoPlay 
-            loop 
-            muted 
-            className="w-full h-full object-cover opacity-30"
-            initial={{ scale: 1.2 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 10, ease: "easeOut" }}
-          />
+          {/* Show image on mobile or when video fails to load */}
+          {(isMobile || !videoLoaded || videoError) && (
+            <motion.img 
+              src="/im3.jpeg" 
+              alt="Jupurr Hero Fallback" 
+              className="w-full h-full object-cover opacity-30"
+              initial={{ scale: 1.2 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 10, ease: "easeOut" }}
+            />
+          )}
+          
+          {/* Video background - only on desktop and when not mobile */}
+          {!isMobile && (
+            <motion.video 
+              src="/homepage video.mp4" 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              preload="auto"
+              className={`w-full h-full object-cover opacity-30 ${videoLoaded ? 'block' : 'hidden'}`}
+              initial={{ scale: 1.2 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 10, ease: "easeOut" }}
+              onLoadStart={() => console.log('Video loading started')}
+              onCanPlay={() => {
+                console.log('Video can play')
+                setVideoLoaded(true)
+              }}
+              onError={() => {
+                console.log('Video failed to load')
+                setVideoError(true)
+              }}
+            />
+          )}
         </div>
         
         <div className="relative z-20 text-center max-w-4xl mx-auto">
