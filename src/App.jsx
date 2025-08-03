@@ -46,7 +46,7 @@ function App() {
           {/* Show image while video loads or if video fails */}
           {(!videoLoaded || videoError) && (
             <motion.img 
-              src="/im3.jpeg" 
+              src="/jupurr-hero-1.jpeg" 
               alt="Jupurr Hero Fallback" 
               className="w-full h-full object-cover opacity-30"
               initial={{ scale: 1.2 }}
@@ -158,7 +158,7 @@ function App() {
             
             <motion.div variants={fadeInUp}>
               <img 
-                src="/WhatsApp Image 2025-07-27 at 8.20.16 PM.jpeg" 
+                src="/jupurr-origin-1.jpeg" 
                 alt="Microwave explosion" 
                 className="rounded-lg shadow-2xl w-full hover:scale-105 transition-transform duration-300"
               />
@@ -168,7 +168,7 @@ function App() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <motion.div variants={fadeInUp} className="order-2 md:order-1">
               <img 
-                src="/WhatsApp Image 2025-07-27 at 8.20.16 PM.jpeg" 
+                src="/jupurr-origin-2.jpeg" 
                 alt="Microwave explosion" 
                 className="rounded-lg shadow-2xl w-full hover:scale-105 transition-transform duration-300"
               />
@@ -204,10 +204,10 @@ function App() {
             Purr Videos
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <video src="/pur1.mp4" controls className="w-full rounded-lg shadow-lg" poster="/WhatsApp Image 2025-07-27 at 8.20.20 PM.jpeg">
+            <video src="/pur1.mp4" controls className="w-full rounded-lg shadow-lg" poster="/jupurr-bio-1.jpeg">
               Sorry, your browser does not support embedded videos.
             </video>
-            <video src="/pur2.mp4" controls className="w-full rounded-lg shadow-lg" poster="/WhatsApp Image 2025-07-27 at 8.24.58 PM (1).jpeg">
+            <video src="/pur2.mp4" controls className="w-full rounded-lg shadow-lg" poster="/jupurr-bio-2.jpeg">
               Sorry, your browser does not support embedded videos.
             </video>
           </div>
@@ -240,7 +240,7 @@ function App() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div variants={fadeInUp}>
               <img 
-                src="/WhatsApp Image 2025-07-27 at 8.20.23 PM.jpeg" 
+                src="/jupurr-bio-1.jpeg" 
                 alt="Jupurr closeup" 
                 className="rounded-lg shadow-2xl w-full hover:scale-105 transition-transform duration-300"
               />
@@ -276,12 +276,12 @@ function App() {
             variants={fadeInUp}
           >
             <img
-              src="/WhatsApp Image 2025-07-27 at 8.20.23 PM (1).jpeg"
+              src="/jupurr-bio-2.jpeg"
               alt="Jupurr Cat Hologram Surprised"
               className="w-full max-w-3xl object-contain rounded-2xl shadow-2xl bg-black/30"
             />
             <img
-              src="/WhatsApp Image 2025-07-27 at 8.20.23 PM (2).jpeg"
+              src="/jupurr-moment-1.jpeg"
               alt="Jupurr Cat Hologram Happy"
               className="w-full max-w-3xl object-contain rounded-2xl shadow-2xl bg-black/30"
             />
@@ -379,7 +379,7 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <motion.div variants={fadeInUp}>
               <img 
-                src="/im3.jpeg" 
+                src="/jupurr-moment-2.jpeg" 
                 alt="Jupurr moment 1" 
                 className="rounded-lg shadow-2xl w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -387,8 +387,16 @@ function App() {
             
             <motion.div variants={fadeInUp}>
               <img 
-                src="/WhatsApp Image 2025-07-27 at 8.24.58 PM.jpeg" 
+                src="/jupurr-moment-3.jpeg" 
                 alt="Jupurr moment 2" 
+                className="rounded-lg shadow-2xl w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </motion.div>
+            
+            <motion.div variants={fadeInUp}>
+              <img 
+                src="/jupurr-moment-4.jpeg" 
+                alt="Jupurr moment 3" 
                 className="rounded-lg shadow-2xl w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
               />
             </motion.div>
